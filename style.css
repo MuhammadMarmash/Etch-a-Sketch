@@ -1,0 +1,154 @@
+body{
+    text-align: center;
+    background-color: #ededed;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+/* header area*/
+header{
+    padding: 30px 0;
+}
+h1{
+    font-size: 80px;
+    line-height: 1.2;
+    margin: 0;
+}
+/* main area */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+}
+
+button,
+input {
+    width: 100%;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+button.active {
+    background-color: #333;
+    color: #ededed;
+}
+
+button, #colorPicker{
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover, #colorPicker:hover {
+    transform: scale(1.05);
+}
+
+#colorPicker:active {
+    transition: transform 0.05s ease-in-out;
+    transform: scale(1);
+}
+
+#colorPicker {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: none;
+}
+
+#colorPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#sizeValue{
+    margin-bottom: -20px;
+    font-size: 20px;
+}
+
+#sizeSlider {
+    -webkit-appearance: none;
+    background-color: #ededed;
+}
+
+#sizeSlider::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 25px;
+    background: #fefefe;
+}
+
+#sizeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: #333;
+}
+
+.currentMode{
+    background-color: #333;
+    color: #ededed;
+}
+
+/* footer area */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+body{
+    margin-bottom: 100px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.fa-github {
+    color: #333;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}

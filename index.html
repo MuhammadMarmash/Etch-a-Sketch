@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Roboto:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+    <script src="app.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body ondragstart="return false;" ondrop="return false;">
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <main>
+        <div class="options">
+            <input type="color" value="#333333" id="colorPicker">
+            <button id="colorBtn">Color mode</button>
+            <button id="rainbowBtn">Rainbow mode</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+            <div id="sizeValue">16 x 16</div>
+            <input type="range" id="sizeSlider" value="16" max="64" min="1">
+        </div>
+        <div class="container"></div>
+    </main>
+    <footer>
+        <p>Copyright ©
+            <script>document.write(new Date().getFullYear())</script> MuhammadMarmash
+        </p>
+        <a href="https://github.com/MuhammadMarmash" target="_blank"><i class="fab fa-github"
+                aria-hidden="true"></i></a>
+    </footer>
+</body>
+
+</html>
